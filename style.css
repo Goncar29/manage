@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 62.5%; */
+}
+
+html {
+    background-color: #FAFAFA;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 62.5%;
+}
+
+/* Header */
+
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 15rem;
+    justify-content: space-around;
+    
+}
+
+/* Header - Logo*/
+
+header div img {
+    max-height: 2.3rem;
+    max-width: 12rem;
+}
+
+/* Header - Nav*/
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header nav ul li {
+    color: #242E52;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: space-around;
+    padding: 1.0rem; 
+}
+
+/* Header - Button*/
+
+header button {
+    background-color: #F3603B;
+    border: none;
+    border-radius: 5.0rem;
+    box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 50rem;
+    max-width: 13.4rem;
+    padding: 1.0rem 2.5rem;
+}
+
+/* Main - Box 1*/
+    /* First section*/
+
+.box-section-1 {
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: space-around;
+    padding: 0 6rem 0 7rem;
+}
+
+.first-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: justify;
+    max-width: 50rem;
+    padding-top: 14rem;
+    padding-bottom: 5.0rem;
+}
+
+.first-section h1 {
+    display: flex;
+    color: #232C50;
+    font-size: 5.8rem;
+    font-weight: 70rem;
+    justify-content: center;
+    text-align: left;
+}
+
+.first-section p {
+    display: flex;
+    font-weight: 50rem;
+    line-height: 2.6rem;
+    max-width: 35rem;
+    padding: 2.8rem 0;
+}
+
+.first-section button {
+    background-color: #F3603B;
+    border: none;
+    border-radius: 5.0rem;
+    box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 50;
+    max-width: 13.4rem;
+    padding: 1rem 2.5rem;
+    margin-left: 1rem;
+}
+
+/* Main - Box 1*/
+    /*Second section*/
+
+.second-section {
+    display: flex;
+    justify-content:center;
+}
+
+.second-section img {
+    display: flex;
+    top: 22rem;
+    padding-left: 5rem;
+    max-width: 63rem;
+    max-height: 52.5rem;
+}
+
+/* Main - Box 2*/
+    /*Third section*/
+
+.box-section-2 {
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: space-around;
+    padding: 15rem 6rem 0 7rem;
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+}
+
+.third-section h2 {
+    color: #232851;
+    display: flex;
+    font-size: 3.6rem;
+    font-weight: 70rem;
+    text-align: left;
+}
+
+.third-section p {
+    display: flex;
+    font-weight: 50rem;
+    justify-content: center;
+    line-height: 2.4rem;
+    max-width: 33.7rem;
+    padding-top: 3.6rem;
+    text-align: justify;
+}
+
+/* Main - Box 2*/ 
+    /*Fourth section*/
+
+.fourth-section div {
+    display: flex;
+}
+
+.fourth-section div button {
+    background-color: #F3603B;
+    border: none;
+    border-radius: 30rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column; 
+    font-weight: 70rem;
+    height: 4.3rem;
+    justify-content: center;
+    margin-right: 2.3rem;
+    max-width: 6.3rem;
+    padding: 1.0rem 2.5rem; 
+}
+
+.fourth-section .text-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.fourth-section div h3 {
+    color: #323851;
+    font-weight: 70rem;
+    font-size: 1.6rem;
+}
+
+.fourth-section div p {
+    color: #B3B2B7;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    max-width: 45.8rem;
+    padding-top: 2.6rem;
+    text-align: left;
+}
+
+/* Main - Box 3*/ 
+    /*Fifth section*/
+
+.box-section-3 {
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: column;
+}
+
+.box-section-3 h2 {
+    color: #242E53;
+    font-weight: 70rem;
+    font-size: 3.9rem;
+    padding-top: 13rem;
+    padding-bottom: 7.4rem;
+    text-align: center;
+}
+
+.fifth-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 3.0rem;
+}
+
+.fifth-section div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.9rem;
+}
+
+.fifth-section div img {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    max-height: 7.0rem;
+    max-width: 7.0rem;
+}
+
+.fifth-section div h4 {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.1rem;
+    padding-top: 2.1rem;
+    text-align: center;
+    width: 10rem;
+}
+
+.fifth-section div p {
+    color: #B9B9C1;
+    display: flex;
+    flex-direction: column;
+    font-weight: 50rem;
+    justify-content: center;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.box-section-3 button {
+    align-self: center;
+    background-color: #F3603B;
+    border: none;
+    border-radius: 5.0rem;
+    box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 50rem;
+    margin: 8.0rem 0;
+    max-width: 13.4rem;
+    padding: 1rem 2.5rem;
+}
+
+/* Main - Box 4*/ 
+
+.box-section-4 {
+    background-color: #F3613C;
+    display: flex;
+    font-size: 1.6rem;
+    height: 22.4rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-section-4 h2 {
+    color: #ffffff;
+    display: flex;
+    font-size: 4.0rem;
+    font-weight: 70rem;
+    width: 50rem;
+}
+
+.box-section-4 button {
+    align-self: center;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5.0rem;
+    box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+    color: #F3603B;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 50rem;
+    max-width: 13.4rem;
+    padding: 1.0rem 2.5rem;
+    position: absolute;
+    right: 14rem;
+}
+
+/* Footer*/ 
+
+footer {
+    background-color: #1E1E26;
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+    /* Img*/
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-footer-img img {
+    display: flex;
+    margin: 5rem 5rem 5rem 5rem;
+}
+
+    /* Icon*/
+
+.box-footer .box-footer-icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 5rem 5rem 5rem;
+}
+
+    /* List*/
+
+.box-list {
+    display: flex;
+    height: 24.7rem;
+    justify-content: space-between;
+    margin: 0rem 10rem 0 11rem;
+    width: 36rem;
+}
+
+.box-list .list-1 {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-weight: 40rem;
+    justify-content: space-between;
+    height: 13rem;
+    list-style: none;
+}
+
+.box-list .list-2 {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-weight: 40rem;
+    height: 9.5rem;
+    justify-content: space-between;
+    list-style: none;
+}
+
+    /* Input*/
+
+.box-input input {
+    border: none;
+    border-radius: 5rem;
+    height: 4.4rem;
+    padding: 1rem;
+    width: 20.1rem;
+}
+
+.box-input button {
+    background-color: #F3603B;
+    border: none;
+    border-radius: 3.0rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 50rem;
+    height: 4.3rem;
+    justify-content: center;
+    margin-left: 0.9rem;
+    max-width: 6.3rem;
+    padding: 1rem 2.5rem; 
+    text-align: center;
+}
+
+.box-input p {
+    color: #8C8C94;
+    font-size: 1.25rem;
+    font-weight: 50rem;
+    padding: 7.4rem 0 0 5.5rem;
+}
+
+@media (max-width:1000px) {
+    .box-section-1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .first-section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10rem;
+        margin-top:40rem;
+    }
+    .first-section h1 {
+        text-align: center;
+    }
+    .box-section-2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .second-section{
+        position: absolute;
+    }
+    .second-section img {
+        display: flex;
+        width: 100%;
+    }
+    .third-section {
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .third-section h2{
+        text-align:center;
+    }
+    .third-section p{
+        text-align:center;
+    }
+    .box-section-3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .box-section-4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:cen ter;
+        text-align: center;
+    }
+}
+
+
+
