@@ -384,7 +384,6 @@ footer {
     height: 13rem;
     list-style: none;
     padding: 0 20rem 0 0;
-
 }
 
 .box-list .list-2 {
@@ -455,20 +454,21 @@ footer {
         margin-bottom: 10rem;
         margin-top:40rem;
     }
-    .first-section h1 {
-        text-align: center;
-    }
-    .box-section-2{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:center;
-    }
     .second-section{
         position: absolute;
     }
     .second-section img {
         display: flex;
         width: 100%;
+    }
+    .first-section h1 {
+        text-align: center;
+    }
+
+    .box-section-2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
     }
     .third-section {
         padding: 0;
@@ -486,11 +486,43 @@ footer {
         flex-wrap: wrap;
         justify-content:center;
     }
+    
     .box-section-4{
         display: flex;
-        flex-wrap: wrap;
-        justify-content:cen ter;
+        flex-direction:column;
         text-align: center;
+        justify-content: space-around;
+    }
+    footer {
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .box-list .list-1 {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        font-weight: 40rem;
+        justify-content: space-between;
+        height: 13rem;
+        list-style: none;
+        padding: 0rem 10rem 0 0;
+    }
+    .box-footer{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .box-footer .box-footer-icon {
+        display: flex;
+        justify-content:space-evenly;
+        padding: 5rem 0 5rem 0;
+    }
+    .box-input input{
+        margin-bottom: 5rem;
+    }
+    .box-input p {
+        position: absolute;
+        padding: 33rem 0 0 2rem;
+        align-items: center;
     }
 }
 
