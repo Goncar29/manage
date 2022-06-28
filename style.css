@@ -318,8 +318,9 @@ footer {
     background-color: #1E1E26;
     display: flex;
     font-size: 1.6rem;
-    flex-direction: row;
     align-items: center;
+    justify-content:space-around;
+    padding: 7rem 0;
 }
 
     /* Img*/
@@ -331,7 +332,7 @@ footer {
 
 .box-footer-img img {
     display: flex;
-    margin: 5rem 5rem 5rem 5rem;
+
 }
 
     /* Icon*/
@@ -339,17 +340,13 @@ footer {
 .box-footer .box-footer-icon {
     display: flex;
     justify-content: space-between;
-    margin: 5rem 5rem 5rem 5rem;
+    padding: 7rem 0 0 0;
 }
 
     /* List*/
 
 .box-list {
     display: flex;
-    height: 24.7rem;
-    justify-content: space-between;
-    margin: 0rem 10rem 0 11rem;
-    width: 36rem;
 }
 
 .box-list .list-1 {
@@ -360,6 +357,8 @@ footer {
     justify-content: space-between;
     height: 13rem;
     list-style: none;
+    padding: 0 20rem 0 0;
+
 }
 
 .box-list .list-2 {
@@ -373,6 +372,10 @@ footer {
 }
 
     /* Input*/
+.box-input {
+    display: flex;
+    flex-direction: row;
+}
 
 .box-input input {
     border: none;
@@ -401,9 +404,13 @@ footer {
     color: #8C8C94;
     font-size: 1.25rem;
     font-weight: 50rem;
-    padding: 7.4rem 0 0 5.5rem;
+    padding: 7.4rem 0 0 5rem;
 }
 
+.derechos {
+    display: flex;
+    align-items: center;
+}
 @media (max-width:1000px) {
     .box-section-1{
         display: flex;
