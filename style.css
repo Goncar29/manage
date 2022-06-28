@@ -45,6 +45,11 @@ header nav ul li {
     padding: 1.0rem; 
 }
 
+header nav ul li:hover {
+    cursor: pointer;
+    color: rgb(175, 175, 175);
+}
+
 /* Header - Button*/
 
 header button {
@@ -58,6 +63,11 @@ header button {
     max-width: 13.4rem;
     padding: 1.0rem 2.5rem;
 }
+header button:hover {
+    cursor: pointer;
+    background-color: #f1b3a3;
+}
+
 
 /* Main - Box 1*/
     /* First section*/
@@ -107,6 +117,10 @@ header button {
     max-width: 13.4rem;
     padding: 1rem 2.5rem;
     margin-left: 1rem;
+}
+.first-section button:hover {
+    cursor: pointer;
+    background-color: #f1b3a3;
 }
 
 /* Main - Box 1*/
@@ -276,6 +290,10 @@ header button {
     max-width: 13.4rem;
     padding: 1rem 2.5rem;
 }
+.box-section-3 button:hover {
+    cursor: pointer;
+    background-color: #f1b3a3;
+}
 
 /* Main - Box 4*/ 
 
@@ -311,6 +329,11 @@ header button {
     padding: 1.0rem 2.5rem;
 }
 
+.box-section-4 button:hover {
+    cursor: pointer;
+    color: #f1b3a3;
+}
+
 /* Footer*/ 
 
 footer {
@@ -341,6 +364,10 @@ footer {
     justify-content: space-between;
     padding: 7rem 0 0 0;
 }
+.box-footer .box-footer-icon a img:hover {
+    cursor: pointer;
+    filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
 
     /* List*/
 
@@ -370,6 +397,10 @@ footer {
     list-style: none;
 }
 
+.box-list li:hover{
+        cursor: pointer;
+        color: #F3603B;
+}
     /* Input*/
 .box-input {
     display: flex;
@@ -399,17 +430,19 @@ footer {
     text-align: center;
 }
 
+
 .box-input p {
     color: #8C8C94;
     font-size: 1.25rem;
     font-weight: 50rem;
     padding: 7.4rem 0 0 5rem;
 }
-
-.derechos {
-    display: flex;
-    align-items: center;
+.box-input button:hover {
+    cursor: pointer;
+    background-color: #f1b3a3;
 }
+
+
 @media (max-width:1000px) {
     .box-section-1{
         display: flex;
