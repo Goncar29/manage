@@ -284,8 +284,9 @@ header button {
     display: flex;
     font-size: 1.6rem;
     height: 22.4rem;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 12rem;
 }
 
 .box-section-4 h2 {
@@ -308,8 +309,6 @@ header button {
     font-weight: 50rem;
     max-width: 13.4rem;
     padding: 1.0rem 2.5rem;
-    position: absolute;
-    right: 14rem;
 }
 
 /* Footer*/ 
