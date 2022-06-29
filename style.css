@@ -5,8 +5,18 @@
     /* font-size: 62.5%; */
 }
 
+:root {
+    --rojo-brillante: rgb(242, 95, 58);
+    --azul-oscuro: rgb(35, 44, 81);
+    --azul-grisáceo-oscuro: rgb(143, 148, 167);
+    --azul-muy-oscuro: rgb(29, 30, 37);
+    --rojo-muy-pálido: rgb(255, 239, 234);
+    --variante-gris-claro: rgb(249, 249, 249);
+    --rojo-botonesHover: #f1b3a3 ;
+}
+
 html {
-    background-color: #FAFAFA;
+    background-color: var(--variante-gris-claro);
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 62.5%;
 }
@@ -47,17 +57,17 @@ header nav ul li {
 
 header nav ul li:hover {
     cursor: pointer;
-    color: rgb(175, 175, 175);
+    color: var(--variante-gris-claro);
 }
 
 /* Header - Button*/
 
 header button {
-    background-color: #F3603B;
+    background-color: var(--rojo-brillante);
     border: none;
     border-radius: 5.0rem;
     box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
-    color: #ffffff;
+    color: var(--variante-gris-claro);
     font-size: 1.3rem;
     font-weight: 50rem;
     max-width: 13.4rem;
@@ -65,9 +75,11 @@ header button {
 }
 header button:hover {
     cursor: pointer;
-    background-color: #f1b3a3;
+    background-color: var(--rojo-botonesHover);
 }
-
+header .menu__nav {
+    visibility: hidden;
+}
 
 /* Main - Box 1*/
     /* First section*/
@@ -91,7 +103,7 @@ header button:hover {
 
 .first-section h1 {
     display: flex;
-    color: #232C50;
+    color: var(--azul-muy-oscuro);
     font-size: 5.8rem;
     font-weight: 70rem;
     justify-content: center;
@@ -107,11 +119,11 @@ header button:hover {
 }
 
 .first-section button {
-    background-color: #F3603B;
+    background-color: var(--rojo-brillante);
     border: none;
     border-radius: 5.0rem;
     box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
-    color: #ffffff;
+    color: var(--variante-gris-claro);
     font-size: 1.3rem;
     font-weight: 50;
     max-width: 13.4rem;
@@ -120,7 +132,7 @@ header button:hover {
 }
 .first-section button:hover {
     cursor: pointer;
-    background-color: #f1b3a3;
+    background-color: var(--rojo-botonesHover);
 }
 
 /* Main - Box 1*/
@@ -140,27 +152,27 @@ header button:hover {
 }
 
 /* Main - Box 2*/
-    /*Third section*/
+/*Third section*/
 
 .box-section-2 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 1.6rem;
-    justify-content: space-around;
-    padding: 15rem 6rem 0 7rem;
 }
 
 .third-section {
     display: flex;
     flex-direction: column;
-    max-width: 50rem;
 }
 
 .third-section h2 {
-    color: #232851;
+    color: var(--azul-oscuro);
     display: flex;
     font-size: 3.6rem;
-    font-weight: 70rem;
+    font-weight: 700;
     text-align: left;
+    width: 40rem;
 }
 
 .third-section p {
@@ -173,132 +185,139 @@ header button:hover {
     text-align: justify;
 }
 
-/* Main - Box 2*/ 
-    /*Fourth section*/
+/* 
+Main - Box 2 
+Fourth section */
 
-.fourth-section div {
+.fourth-section {
     display: flex;
+    flex-direction: column;
+    width: 55rem;
 }
 
-.fourth-section div button {
-    background-color: #F3603B;
-    border: none;
-    border-radius: 30rem;
-    color: #ffffff;
+.fourth-section p {
+    line-height: 2;
+    font-size: 1.6rem;
+}
+
+.fourth-section div span {
+    align-items: center;
+    background-color: var(--rojo-brillante);
+    border-radius: 3rem;
+    color: var(--rojo-muy-pálido);
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     font-weight: 70rem;
     height: 4.3rem;
     justify-content: center;
-    margin-right: 2.3rem;
-    max-width: 6.3rem;
-    padding: 1.0rem 2.5rem; 
+    width: 6.3rem;
+    padding: 1rem 2.5rem;
 }
 
-.fourth-section .text-container {
+.fourth-section p:first-of-type {
+    color: var(--azul-oscuro);
     display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
+    align-items: center;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    margin-top: -4rem;
 }
 
-.fourth-section div h3 {
-    color: #323851;
-    font-weight: 70rem;
-    font-size: 1.6rem;
+.fourth-section p:nth-child(2) {
+    color: var(--azul-oscuro);
+    padding-left: 10rem;
 }
 
-.fourth-section div p {
-    color: #B3B2B7;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    max-width: 45.8rem;
-    padding-top: 2.6rem;
-    text-align: left;
+.fourth-section p:nth-child(3) {
+    color: var(--azul-grisáceo-oscuro);
+    padding-left: 10rem;
 }
 
 /* Main - Box 3*/ 
     /*Fifth section*/
 
-.box-section-3 {
-    display: flex;
-    font-size: 1.6rem;
-    flex-direction: column;
-}
-
-.box-section-3 h2 {
-    color: #242E53;
-    font-weight: 70rem;
-    font-size: 3.9rem;
-    padding-top: 13rem;
-    padding-bottom: 7.4rem;
-    text-align: center;
-}
-
-.fifth-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0 3.0rem;
-}
-
-.fifth-section div {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0.9rem;
-}
-
-.fifth-section div img {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    max-height: 7.0rem;
-    max-width: 7.0rem;
-}
-
-.fifth-section div h4 {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2.1rem;
-    padding-top: 2.1rem;
-    text-align: center;
-    width: 10rem;
-}
-
-.fifth-section div p {
-    color: #B9B9C1;
-    display: flex;
-    flex-direction: column;
-    font-weight: 50rem;
-    justify-content: center;
-    line-height: 2.5rem;
-    text-align: center;
-}
-
-.box-section-3 button {
-    align-self: center;
-    background-color: #F3603B;
-    border: none;
-    border-radius: 5.0rem;
-    box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: 50rem;
-    margin: 8.0rem 0;
-    max-width: 13.4rem;
-    padding: 1rem 2.5rem;
-}
-.box-section-3 button:hover {
-    cursor: pointer;
-    background-color: #f1b3a3;
-}
+    .box-section-3 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box-section-3 h2 {
+        color: var(--azul-oscuro);
+        font-weight: 70rem;
+        font-size: 3.9rem;
+        padding-top: 13rem;
+        padding-bottom: 7.4rem;
+        text-align: center;
+    }
+    
+    .fifth-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .fifth-section div {
+        background-color: var(--variante-gris-claro);
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+    
+    .fifth-section div img {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        max-height: 7rem;
+        max-width: 7rem;
+    }
+    
+    .fifth-section div h4 {
+        align-self: center;
+        color: var(--azul-oscuro);
+        display: flex;
+        font-size: 1.6rem;
+        font-weight: 700;
+        flex-direction: column;
+        padding-bottom: 2.1rem;
+        padding-top: 2.1rem;
+        text-align: center;
+        width: 10rem;
+    }
+    
+    .fifth-section div p {
+        color: var(--azul-grisáceo-oscuro);
+        display: flex;
+        flex-direction: column;
+        font-weight: 60rem;
+        font-size: 1.6rem;
+        font-weight: 50rem;
+        justify-content: center;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+    
+    .box-section-3 button {
+        align-self: center;
+        background-color: var(--rojo-brillante);
+        border: none;
+        border-radius: 5rem;
+        box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+        color: var(--rojo-muy-pálido);
+        font-size: 1.3rem;
+        font-weight: 50rem;
+        margin: 8rem 0;
+        max-width: 13.4rem;
+        padding: 1rem 2.5rem;
+    }
+    .box-section-3 button:hover {
+        cursor: pointer;
+        background-color:var(--rojo-botonesHover);
+    }
 
 /* Main - Box 4*/ 
 
 .box-section-4 {
-    background-color: #F3613C;
+    background-color: var(--rojo-brillante);
     display: flex;
     font-size: 1.6rem;
     height: 22.4rem;
@@ -308,7 +327,7 @@ header button:hover {
 }
 
 .box-section-4 h2 {
-    color: #ffffff;
+    color: var(--variante-gris-claro);
     display: flex;
     font-size: 4.0rem;
     font-weight: 70rem;
@@ -317,11 +336,11 @@ header button:hover {
 
 .box-section-4 button {
     align-self: center;
-    background-color: #ffffff;
+    background-color:var(--variante-gris-claro);
     border: none;
     border-radius: 5.0rem;
     box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
-    color: #F3603B;
+    color: var(--rojo-brillante);
     display: flex;
     font-size: 1.3rem;
     font-weight: 50rem;
@@ -331,13 +350,13 @@ header button:hover {
 
 .box-section-4 button:hover {
     cursor: pointer;
-    color: #f1b3a3;
+    color: var(--rojo-botonesHover);
 }
 
 /* Footer*/ 
 
 footer {
-    background-color: #1E1E26;
+    background-color: var(--azul-muy-oscuro);
     display: flex;
     font-size: 1.6rem;
     align-items: center;
@@ -376,7 +395,7 @@ footer {
 }
 
 .box-list .list-1 {
-    color: #ffffff;
+    color: var(--variante-gris-claro);
     display: flex;
     flex-direction: column;
     font-weight: 40rem;
@@ -387,7 +406,7 @@ footer {
 }
 
 .box-list .list-2 {
-    color: #ffffff;
+    color: var(--variante-gris-claro);
     display: flex;
     flex-direction: column;
     font-weight: 40rem;
@@ -398,7 +417,7 @@ footer {
 
 .box-list li:hover{
         cursor: pointer;
-        color: #F3603B;
+        color: var(--rojo-brillante);
 }
     /* Input*/
 .box-input {
@@ -415,10 +434,10 @@ footer {
 }
 
 .box-input button {
-    background-color: #F3603B;
+    background-color: var(--rojo-brillante);
     border: none;
     border-radius: 3.0rem;
-    color: #ffffff;
+    color: var(--variante-gris-claro);
     font-size: 1.3rem;
     font-weight: 50rem;
     height: 4.3rem;
@@ -438,20 +457,29 @@ footer {
 }
 .box-input button:hover {
     cursor: pointer;
-    background-color: #f1b3a3;
+    background-color:var(--rojo-botonesHover);
 }
 
 
-@media (max-width:1000px) {
+@media (max-width:1000rem) {
+    header nav, .menu {
+        visibility: hidden;
+        width: 5rem;
+    }
+    header .menu__nav {
+        visibility:visible;
+    }
+    
     .box-section-1{
         display: flex;
         flex-wrap: wrap;
         justify-content:center;
+        padding:0;
     }
     .first-section {
         display: flex;
         align-items: center;
-        margin-bottom: 10rem;
+        margin-bottom: 0;
         margin-top:40rem;
     }
     .second-section{
@@ -469,9 +497,10 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content:center;
+        padding: 0;
     }
     .third-section {
-        padding: 0;
+        padding: 10rem 0;
         display: flex;
         align-items: center;
     }
@@ -487,6 +516,29 @@ footer {
         justify-content:center;
     }
     
+    .box-section-3 .cards {
+        display: hidden;
+        visibility: hidden;
+    }
+
+    .box-section-3 .carrusel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box-section-3 .carrusel .point {
+        border: 0.2rem solid var(--rojo-brillante);
+        border-radius: 50%;
+        height: 1rem;
+        margin: 3rem 0.3rem 6rem 0.3rem;
+        width: 1rem;
+    }
+
+    .box-section-3 button {
+        margin-top: 0;
+    }
+    
     .box-section-4{
         display: flex;
         flex-direction:column;
@@ -497,8 +549,21 @@ footer {
         display: flex;
         flex-direction:column-reverse;
     }
+    .box-footer-img{
+        display: flex;
+        justify-content: center;
+    }
+    .box-footer .box-footer-icon {
+        display: flex;
+        justify-content: space-between;
+        width: 30rem;
+    }
+    .box-footer .box-footer-icon a img:hover {
+        cursor: pointer;
+        filter: opacity(0.4) drop-shadow(0 0 0 red);
+    }
     .box-list .list-1 {
-        color: #ffffff;
+        color: var(--variante-gris-claro);
         display: flex;
         flex-direction: column;
         font-weight: 40rem;
@@ -506,6 +571,10 @@ footer {
         height: 13rem;
         list-style: none;
         padding: 0rem 10rem 0 0;
+    }
+    .box-list li:hover{
+        cursor: pointer;
+        color: var(--rojo-brillante);
     }
     .box-footer{
         display: flex;
