@@ -52,13 +52,10 @@ header nav ul li {
     display: flex;
     font-size: 1.3rem;
     justify-content: space-around;
-    padding: 1.0rem; 
+    padding: 1rem; 
 }
 
-header nav ul li:hover {
-    cursor: pointer;
-    color: var(--variante-gris-claro);
-}
+
 
 /* Header - Button*/
 
@@ -73,11 +70,8 @@ header button {
     max-width: 13.4rem;
     padding: 1.0rem 2.5rem;
 }
-header button:hover {
-    cursor: pointer;
-    background-color: var(--rojo-botonesHover);
-}
-header .menu__nav {
+
+header .menu__nav img {
     visibility: hidden;
 }
 
@@ -88,14 +82,14 @@ header .menu__nav {
     display: flex;
     font-size: 1.6rem;
     justify-content: space-around;
-    padding: 0 6rem 0 7rem;
+    padding: 0 0 0 4rem;
 }
 
 .first-section {
     display: flex;
-    width: 100%;
     flex-direction: column;
     text-align: justify;
+    min-width: 30rem;
     max-width: 50rem;
     padding-top: 14rem;
     padding-bottom: 5.0rem;
@@ -130,10 +124,7 @@ header .menu__nav {
     padding: 1rem 2.5rem;
     margin-left: 1rem;
 }
-.first-section button:hover {
-    cursor: pointer;
-    background-color: var(--rojo-botonesHover);
-}
+
 
 /* Main - Box 1*/
     /*Second section*/
@@ -141,12 +132,12 @@ header .menu__nav {
 .second-section {
     display: flex;
     justify-content:center;
+    object-fit: scale-down;
 }
 
 .second-section img {
     display: flex;
     top: 22rem;
-    padding-left: 5rem;
     max-width: 63rem;
     max-height: 52.5rem;
 }
@@ -156,21 +147,25 @@ header .menu__nav {
 
 .box-section-2 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     font-size: 1.6rem;
+    justify-content: space-around;
+    margin: 0 2rem 0 2rem;
 }
 
-.third-section {
-    display: flex;
+.third-section {display: flex;
+    width: 100%;
     flex-direction: column;
+    text-align: justify;
+    max-width: 40rem;
+    padding-top: 14rem;
+    padding-bottom: 5rem;
 }
 
 .third-section h2 {
     color: var(--azul-oscuro);
     display: flex;
     font-size: 3.6rem;
-    font-weight: 700;
+    font-weight: 70rem;
     text-align: left;
     width: 40rem;
 }
@@ -309,10 +304,6 @@ Fourth section */
         max-width: 13.4rem;
         padding: 1rem 2.5rem;
     }
-    .box-section-3 button:hover {
-        cursor: pointer;
-        background-color:var(--rojo-botonesHover);
-    }
 
 /* Main - Box 4*/ 
 
@@ -348,10 +339,7 @@ Fourth section */
     padding: 1.0rem 2.5rem;
 }
 
-.box-section-4 button:hover {
-    cursor: pointer;
-    color: var(--rojo-botonesHover);
-}
+
 
 /* Footer*/ 
 
@@ -383,10 +371,6 @@ footer {
     justify-content: space-between;
     padding: 7rem 0 0 0;
 }
-.box-footer .box-footer-icon a img:hover {
-    cursor: pointer;
-    filter: opacity(0.4) drop-shadow(0 0 0 red);
-}
 
     /* List*/
 
@@ -415,10 +399,7 @@ footer {
     list-style: none;
 }
 
-.box-list li:hover{
-        cursor: pointer;
-        color: var(--rojo-brillante);
-}
+
     /* Input*/
 .box-input {
     display: flex;
@@ -455,18 +436,49 @@ footer {
     font-weight: 50rem;
     padding: 7.4rem 0 0 5rem;
 }
+
+/* HOVER */
+
+header button:hover {
+    cursor: pointer;
+    background-color: var(--rojo-botonesHover);
+}
+header nav ul li:hover {
+    cursor: pointer;
+    color: var(--rojo-botonesHover);
+}
+.first-section button:hover {
+    cursor: pointer;
+    background-color: var(--rojo-botonesHover);
+}
+.box-section-3 button:hover {
+    cursor: pointer;
+    background-color:var(--rojo-botonesHover);
+}
+.box-section-4 button:hover {
+    cursor: pointer;
+    color: var(--rojo-botonesHover);
+}
+.box-footer .box-footer-icon a img:hover {
+    cursor: pointer;
+    filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+.box-list li:hover{
+    cursor: pointer;
+    color: var(--rojo-brillante);
+}
 .box-input button:hover {
     cursor: pointer;
     background-color:var(--rojo-botonesHover);
 }
 
 
-@media (max-width:1000rem) {
+@media (max-width:850px) {
     header nav, .menu {
         visibility: hidden;
         width: 5rem;
     }
-    header .menu__nav {
+    header .menu__nav img{
         visibility:visible;
     }
     
@@ -492,7 +504,6 @@ footer {
     .first-section h1 {
         text-align: center;
     }
-
     .box-section-2{
         display: flex;
         flex-wrap: wrap;
@@ -515,18 +526,16 @@ footer {
         flex-wrap: wrap;
         justify-content:center;
     }
-    
+
     .box-section-3 .cards {
         display: hidden;
         visibility: hidden;
     }
-
     .box-section-3 .carrusel {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-
     .box-section-3 .carrusel .point {
         border: 0.2rem solid var(--rojo-brillante);
         border-radius: 50%;
@@ -534,7 +543,6 @@ footer {
         margin: 3rem 0.3rem 6rem 0.3rem;
         width: 1rem;
     }
-
     .box-section-3 button {
         margin-top: 0;
     }
@@ -558,10 +566,6 @@ footer {
         justify-content: space-between;
         width: 30rem;
     }
-    .box-footer .box-footer-icon a img:hover {
-        cursor: pointer;
-        filter: opacity(0.4) drop-shadow(0 0 0 red);
-    }
     .box-list .list-1 {
         color: var(--variante-gris-claro);
         display: flex;
@@ -571,10 +575,6 @@ footer {
         height: 13rem;
         list-style: none;
         padding: 0rem 10rem 0 0;
-    }
-    .box-list li:hover{
-        cursor: pointer;
-        color: var(--rojo-brillante);
     }
     .box-footer{
         display: flex;
@@ -592,6 +592,14 @@ footer {
         position: absolute;
         padding: 33rem 0 0 2rem;
         align-items: center;
+    }
+    .box-footer .box-footer-icon a img:hover {
+        cursor: pointer;
+        filter: opacity(0.4) drop-shadow(0 0 0 red);
+    }
+    .box-list li:hover{
+        cursor: pointer;
+        color: var(--rojo-brillante);
     }
 }
 
