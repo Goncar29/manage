@@ -1,0 +1,125 @@
+
+header nav, .menu {
+    visibility: hidden;
+    width: 5rem;
+}
+header .menu__nav img{
+    visibility:visible;
+}
+
+.box-section-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding:0;
+    .first-section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top:40rem;
+        h1 {
+            text-align: center;
+        }
+    }
+    .second-section{
+        position: absolute;
+        img {
+            display: flex;
+            width: 100%;
+        }
+    }
+}
+.box-section-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 0;
+    .third-section {
+        padding: 10rem 0;
+        display: flex;
+        align-items: center;
+        h2{
+            text-align:center;
+        }
+        p{
+            text-align:center;
+        }
+    }
+}
+
+.box-section-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    .cards {
+        display: hidden;
+        visibility: hidden;
+    }
+    .carrusel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .point {
+            border: 0.2rem solid var(--rojo-brillante);
+            border-radius: 50%;
+            height: 1rem;
+            margin: 3rem 0.3rem 6rem 0.3rem;
+            width: 1rem;
+        }
+    }
+    button {
+        margin-top: 0;
+    }
+}
+
+.box-section-4{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+footer {
+    display: flex;
+    flex-direction:column-reverse;
+    .box-footer{
+        display: flex;
+        flex-direction:column-reverse;
+        input{
+            margin-bottom: 5rem;
+        }
+        p {
+            position: absolute;
+            padding: 33rem 0 0 2rem;
+            align-items: center;
+        }
+        .box-footer-icon {
+            display: flex;
+            justify-content: space-between;
+            width: 30rem;
+        }
+        .box-footer-img{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .box-list .list-1 {
+        color: var(--variante-gris-claro);
+        display: flex;
+        flex-direction: column;
+        font-weight: 40rem;
+        justify-content: space-between;
+        height: 13rem;
+        list-style: none;
+        padding: 0rem 10rem 0 0;
+    }
+}
+
+.box-footer .box-footer-icon a img:hover {
+    cursor: pointer;
+    filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+.box-list li:hover{
+    cursor: pointer;
+    color: var(--rojo-brillante);
+}

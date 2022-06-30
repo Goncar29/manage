@@ -1,0 +1,211 @@
+header nav, .menu {
+  visibility: hidden;
+  width: 5rem;
+}
+
+header .menu__nav img {
+  visibility: visible;
+}
+
+.box-section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.box-section-1 .first-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  margin-top: 40rem;
+}
+
+.box-section-1 .first-section h1 {
+  text-align: center;
+}
+
+.box-section-1 .second-section {
+  position: absolute;
+}
+
+.box-section-1 .second-section img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.box-section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.box-section-2 .third-section {
+  padding: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-section-2 .third-section h2 {
+  text-align: center;
+}
+
+.box-section-2 .third-section p {
+  text-align: center;
+}
+
+.box-section-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-section-3 .cards {
+  display: hidden;
+  visibility: hidden;
+}
+
+.box-section-3 .carrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-section-3 .carrusel .point {
+  border: 0.2rem solid var(--rojo-brillante);
+  border-radius: 50%;
+  height: 1rem;
+  margin: 3rem 0.3rem 6rem 0.3rem;
+  width: 1rem;
+}
+
+.box-section-3 button {
+  margin-top: 0;
+}
+
+.box-section-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+footer .box-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+footer .box-footer input {
+  margin-bottom: 5rem;
+}
+
+footer .box-footer p {
+  position: absolute;
+  padding: 33rem 0 0 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .box-footer .box-footer-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30rem;
+}
+
+footer .box-footer .box-footer-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .box-list .list-1 {
+  color: var(--variante-gris-claro);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 40rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 13rem;
+  list-style: none;
+  padding: 0rem 10rem 0 0;
+}
+
+.box-footer .box-footer-icon a img:hover {
+  cursor: pointer;
+  -webkit-filter: opacity(0.4) drop-shadow(0 0 0 red);
+          filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+
+.box-list li:hover {
+  cursor: pointer;
+  color: var(--rojo-brillante);
+}
+/*# sourceMappingURL=mobile.css.map */
