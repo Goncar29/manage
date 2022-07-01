@@ -20,7 +20,6 @@ html {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 62.5%;
 }
-
 /* Header */
 
 header {
@@ -31,10 +30,10 @@ header {
     justify-content: space-around;
     nav ul{
         display: flex;
-        flex-direction: row;
         list-style: none;
+        flex-wrap: wrap;
         li {
-            color: #242E52;
+            color: var(--azul-oscuro);
             display: flex;
             font-size: 1.3rem;
             justify-content: space-around;
@@ -44,6 +43,7 @@ header {
     div img {
         max-height: 2.3rem;
         max-width: 12rem;
+        position: relative;
     }
     button {
         background-color: var(--rojo-brillante);
@@ -64,44 +64,46 @@ header {
 .box-section-1 {
     display: flex;
     font-size: 1.6rem;
-    justify-content: space-around;
-    padding: 0 0 0 4rem;
-    h1 {
-        display: flex;
-        color: var(--azul-muy-oscuro);
-        font-size: 5.8rem;
-        font-weight: 70rem;
-        justify-content: center;
-        text-align: left;
-    }
-    p {
-        display: flex;
-        font-weight: 50rem;
-        line-height: 2.6rem;
-        max-width: 35rem;
-        padding: 2.8rem 0;
-    }
-    button {
-        background-color: var(--rojo-brillante);
-        border: none;
-        border-radius: 5.0rem;
-        box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
-        color: var(--variante-gris-claro);
-        font-size: 1.3rem;
-        font-weight: 50;
-        max-width: 13.4rem;
-        padding: 1rem 2.5rem;
-        margin-left: 1rem;
+    justify-content: space-around; 
+    padding: 0 0 0 3rem;
+    .first-section {
+        h1 {
+            display: flex;
+            color: var(--azul-muy-oscuro);
+            font-size: 5.8rem;
+            font-weight: 70rem;
+            justify-content: center;
+            text-align: left;
+            max-width: 47rem;
+        }
+        p {
+            display: flex;
+            font-weight: 50rem;
+            line-height: 2.6rem;
+            max-width: 35rem;
+            padding: 2.8rem 0;
+        }
+        button {
+            background-color: var(--rojo-brillante);
+            border: none;
+            border-radius: 5.0rem;
+            box-shadow: 0rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+            color: var(--variante-gris-claro);
+            font-size: 1.3rem;
+            font-weight: 50;
+            max-width: 13.4rem;
+            padding: 1rem 2.5rem;
+        }
     }
     .second-section {
         display: flex;
         justify-content:center;
-        object-fit: scale-down;
         img {
+            width: 100%;
             display: flex;
-            top: 22rem;
-            max-width: 63rem;
+            max-width: 58rem;
             max-height: 52.5rem;
+            object-fit: scale-down;
         }
     }
 }
@@ -110,10 +112,8 @@ header {
     display: flex;
     font-size: 1.6rem;
     justify-content: space-around;
-    margin: 0 2rem 0 2rem;
     .third-section {
         display: flex;
-        width: 100%;
         flex-direction: column;
         text-align: justify;
         max-width: 40rem;
@@ -125,7 +125,6 @@ header {
             font-size: 3.6rem;
             font-weight: 70rem;
             text-align: left;
-            width: 40rem;
         }
         p {
             display: flex;
@@ -249,15 +248,16 @@ header {
     display: flex;
     font-size: 1.6rem;
     height: 22.4rem;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items:center;
-    padding: 0 12rem;
+    column-gap: 28rem;
     h2 {
         color: var(--variante-gris-claro);
         display: flex;
         font-size: 4.0rem;
         font-weight: 70rem;
-        width: 50rem;
+        max-width: 50rem;
     }
     button {
         align-self: center;
@@ -282,6 +282,7 @@ footer {
     font-size: 1.6rem;
     align-items: center;
     justify-content:space-around;
+    flex-wrap: wrap;
     padding: 7rem 0;
     .box-footer{
         display: flex;
@@ -297,15 +298,16 @@ footer {
     }
     .box-list {
         display: flex;
+        justify-content: space-between;
+        column-gap: 10rem;
         .list-1 {
             color: var(--variante-gris-claro);
             display: flex;
             flex-direction: column;
             font-weight: 40rem;
             justify-content: space-between;
-            height: 13rem;
             list-style: none;
-            padding: 0 20rem 0 0;
+            row-gap: 2rem;
         }
         .list-2 {
             color: var(--variante-gris-claro);
@@ -315,6 +317,7 @@ footer {
             height: 9.5rem;
             justify-content: space-between;
             list-style: none;
+            row-gap: 2rem;
         }
     }
     .box-input {

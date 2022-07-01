@@ -44,15 +44,13 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header nav ul li {
-  color: #242E52;
+  color: var(--azul-oscuro);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,6 +63,7 @@ header nav ul li {
 header div img {
   max-height: 2.3rem;
   max-width: 12rem;
+  position: relative;
 }
 
 header button {
@@ -91,10 +90,10 @@ header .menu__nav img {
   font-size: 1.6rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 0 0 4rem;
+  padding: 0 0 0 3rem;
 }
 
-.box-section-1 h1 {
+.box-section-1 .first-section h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,9 +104,10 @@ header .menu__nav img {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
+  max-width: 47rem;
 }
 
-.box-section-1 p {
+.box-section-1 .first-section p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +117,7 @@ header .menu__nav img {
   padding: 2.8rem 0;
 }
 
-.box-section-1 button {
+.box-section-1 .first-section button {
   background-color: var(--rojo-brillante);
   border: none;
   border-radius: 5.0rem;
@@ -128,7 +128,6 @@ header .menu__nav img {
   font-weight: 50;
   max-width: 13.4rem;
   padding: 1rem 2.5rem;
-  margin-left: 1rem;
 }
 
 .box-section-1 .second-section {
@@ -138,17 +137,17 @@ header .menu__nav img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
 }
 
 .box-section-1 .second-section img {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 22rem;
-  max-width: 63rem;
+  max-width: 58rem;
   max-height: 52.5rem;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .box-section-2 {
@@ -158,14 +157,12 @@ header .menu__nav img {
   font-size: 1.6rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0 2rem 0 2rem;
 }
 
 .box-section-2 .third-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -184,7 +181,6 @@ header .menu__nav img {
   font-size: 3.6rem;
   font-weight: 70rem;
   text-align: left;
-  width: 40rem;
 }
 
 .box-section-2 .third-section p {
@@ -382,13 +378,15 @@ header .menu__nav img {
   display: flex;
   font-size: 1.6rem;
   height: 22.4rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 12rem;
+  -webkit-column-gap: 28rem;
+          column-gap: 28rem;
 }
 
 .box-section-4 h2 {
@@ -398,7 +396,7 @@ header .menu__nav img {
   display: flex;
   font-size: 4.0rem;
   font-weight: 70rem;
-  width: 50rem;
+  max-width: 50rem;
 }
 
 .box-section-4 button {
@@ -431,6 +429,8 @@ footer {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 7rem 0;
 }
 
@@ -464,6 +464,11 @@ footer .box-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 10rem;
+          column-gap: 10rem;
 }
 
 footer .box-list .list-1 {
@@ -479,9 +484,8 @@ footer .box-list .list-1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 13rem;
   list-style: none;
-  padding: 0 20rem 0 0;
+  row-gap: 2rem;
 }
 
 footer .box-list .list-2 {
@@ -499,6 +503,7 @@ footer .box-list .list-2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
+  row-gap: 2rem;
 }
 
 footer .box-input {
