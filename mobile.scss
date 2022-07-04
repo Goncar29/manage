@@ -64,20 +64,16 @@ header {
 .box-section-1 {
     display: flex;
     font-size: 1.6rem;
-    justify-content: space-around; 
-    padding: 0 0 0 3rem;
+    align-items: center;
     .first-section {
         h1 {
-            display: flex;
             color: var(--azul-muy-oscuro);
             font-size: 5.8rem;
             font-weight: 70rem;
-            justify-content: center;
             text-align: left;
             max-width: 47rem;
         }
         p {
-            display: flex;
             font-weight: 50rem;
             line-height: 2.6rem;
             max-width: 35rem;
@@ -96,13 +92,11 @@ header {
         }
     }
     .second-section {
-        display: flex;
-        justify-content:center;
         img {
             width: 100%;
             display: flex;
             max-width: 58rem;
-            max-height: 52.5rem;
+            max-height: 50rem;
             object-fit: scale-down;
         }
     }
@@ -112,6 +106,7 @@ header {
     display: flex;
     font-size: 1.6rem;
     justify-content: space-around;
+    align-items: center;
     .third-section {
         display: flex;
         flex-direction: column;
@@ -322,7 +317,7 @@ footer {
     }
     .box-input {
         display: flex;
-        flex-direction: row;
+        flex-direction: wrap;
         input {
             border: none;
             border-radius: 5rem;
@@ -478,8 +473,6 @@ footer {
         input{
             margin-bottom: 5rem;
         }
-        p {
-        }
         .box-footer-icon {
             display: flex;
             justify-content: space-between;
@@ -488,17 +481,29 @@ footer {
         .box-footer-img{
             display: flex;
             justify-content: center;
+            padding-top: 5rem;
         }
     }
-    .box-list .list-1 {
-        color: var(--variante-gris-claro);
+    .box-list {
         display: flex;
-        flex-direction: column;
-        font-weight: 40rem;
-        justify-content: space-between;
-        height: 13rem;
-        list-style: none;
-        padding: 0rem 10rem 0 0;
+        .list-1 {
+            color: var(--variante-gris-claro);
+            display: flex;
+            flex-direction: column;
+            font-weight: 40rem;
+            justify-content: space-between;
+            height: 13rem;
+            list-style: none;
+            padding: 0rem 10rem 0 0;
+        }
+    } 
+    .box-input{
+        padding-bottom: 5rem;
+        p{
+            position: absolute;
+            padding-top: 40rem;
+            padding-left: 2rem;
+        }
     }
 }
 
