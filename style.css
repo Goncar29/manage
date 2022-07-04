@@ -160,6 +160,10 @@ header .menu__nav img {
       justify-content: space-around;
   -webkit-column-gap: 10rem;
           column-gap: 10rem;
+  background-image: url(./imagenes/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right;
 }
 
 .box-section-2 .third-section {
@@ -208,7 +212,7 @@ header .menu__nav img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 55rem;
+  max-width: 55rem;
 }
 
 .box-section-2 .fourth-section p {

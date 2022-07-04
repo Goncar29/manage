@@ -113,6 +113,10 @@ header {
     font-size: 1.6rem;
     justify-content: space-around;
     column-gap: 10rem;
+    background-image: url(./imagenes/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right;
     .third-section {
         display: flex;
         flex-direction: column;
@@ -140,7 +144,7 @@ header {
     .fourth-section {
         display: flex;
         flex-direction: column;
-        width: 55rem;
+        max-width: 55rem;
         p {
             line-height: 2;
             font-size: 1.6rem;
