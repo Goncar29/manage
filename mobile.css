@@ -175,7 +175,9 @@ header .menu__nav img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .box-section-2 .third-section {
@@ -188,8 +190,6 @@ header .menu__nav img {
           flex-direction: column;
   text-align: justify;
   max-width: 40rem;
-  padding-top: 14rem;
-  padding-bottom: 5rem;
   padding: 10rem 0;
   display: flex;
   -webkit-box-align: center;
@@ -480,7 +480,6 @@ footer {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  /* HOVER */
 }
 
 footer .box-footer {
@@ -491,10 +490,6 @@ footer .box-footer {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-}
-
-footer .box-footer input {
-  margin-bottom: 5rem;
 }
 
 footer .box-footer .box-footer-img {
@@ -514,7 +509,7 @@ footer .box-footer .box-footer-img img {
   display: flex;
 }
 
-footer .box-footer .box-footer-img .box-footer-icon {
+footer .box-footer-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,7 +519,7 @@ footer .box-footer .box-footer-img .box-footer-icon {
   padding: 7rem 0 0 0;
 }
 
-footer .box-footer .box-list {
+footer .box-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,7 +530,7 @@ footer .box-footer .box-list {
           column-gap: 10rem;
 }
 
-footer .box-footer .box-list .list-1 {
+footer .box-list .list-1 {
   color: var(--variante-gris-claro);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,7 +549,7 @@ footer .box-footer .box-list .list-1 {
   padding: 0rem 10rem 0 0;
 }
 
-footer .box-footer .box-list .list-2 {
+footer .box-list .list-2 {
   color: var(--variante-gris-claro);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,7 +567,7 @@ footer .box-footer .box-list .list-2 {
   row-gap: 2rem;
 }
 
-footer .box-footer .box-input {
+footer .box-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,15 +578,16 @@ footer .box-footer .box-input {
   padding-bottom: 5rem;
 }
 
-footer .box-footer .box-input input {
+footer .box-input input {
   border: none;
   border-radius: 5rem;
   height: 4.4rem;
   padding: 1rem;
   width: 20.1rem;
+  margin-bottom: 5rem;
 }
 
-footer .box-footer .box-input button {
+footer .box-input button {
   background-color: var(--rojo-brillante);
   border: none;
   border-radius: 3.0rem;
@@ -608,7 +604,7 @@ footer .box-footer .box-input button {
   text-align: center;
 }
 
-footer .box-footer .box-input p {
+footer .box-input p {
   color: #8C8C94;
   font-size: 1.25rem;
   font-weight: 50rem;
@@ -620,54 +616,54 @@ footer .box-footer .box-input p {
   padding-left: 2rem;
 }
 
-footer header button:hover {
+header button:hover {
   cursor: pointer;
   background-color: var(--rojo-botonesHover);
 }
 
-footer header nav ul li:hover {
+header nav ul li:hover {
   cursor: pointer;
   color: var(--rojo-botonesHover);
 }
 
-footer .first-section button:hover {
+.first-section button:hover {
   cursor: pointer;
   background-color: var(--rojo-botonesHover);
 }
 
-footer .box-section-3 button:hover {
+.box-section-3 button:hover {
   cursor: pointer;
   background-color: var(--rojo-botonesHover);
 }
 
-footer .box-section-4 button:hover {
+.box-section-4 button:hover {
   cursor: pointer;
   color: var(--rojo-botonesHover);
 }
 
-footer .box-footer .box-footer-icon a img:hover {
+.box-footer .box-footer-icon a img:hover {
   cursor: pointer;
   -webkit-filter: opacity(0.4) drop-shadow(0 0 0 red);
           filter: opacity(0.4) drop-shadow(0 0 0 red);
 }
 
-footer .box-list li:hover {
+.box-list li:hover {
   cursor: pointer;
   color: var(--rojo-brillante);
 }
 
-footer .box-input button:hover {
+.box-input button:hover {
   cursor: pointer;
   background-color: var(--rojo-botonesHover);
 }
 
-footer .box-footer .box-footer-icon a img:hover {
+.box-footer .box-footer-icon a img:hover {
   cursor: pointer;
   -webkit-filter: opacity(0.4) drop-shadow(0 0 0 red);
           filter: opacity(0.4) drop-shadow(0 0 0 red);
 }
 
-footer .box-list li:hover {
+.box-list li:hover {
   cursor: pointer;
   color: var(--rojo-brillante);
 }

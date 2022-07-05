@@ -28,7 +28,6 @@ header {
     flex-direction: row;
     height: 15rem;
     justify-content: space-around;
-    
     nav {
         visibility: hidden;
         width: 5rem;
@@ -124,15 +123,13 @@ header {
 .box-section-2 {
     font-size: 1.6rem;
     display: flex;
-    flex-direction: column;;
-    padding: 0;
+    flex-direction: column;
+    align-items: center;
     .third-section {
         display: flex;
         flex-direction: column;
         text-align: justify;
         max-width: 40rem;
-        padding-top: 14rem;
-        padding-bottom: 5rem;
         padding: 10rem 0;
         display: flex;
         align-items: center;
@@ -171,7 +168,7 @@ header {
                 line-height: 3rem;
                 max-width:90%;
             }
-            h4{
+            h4 {
                 background-color: rgb(247, 224, 224);
                 border-radius: 3rem 0 0 3rem;
                 padding-top: 1rem;
@@ -322,22 +319,20 @@ footer {
     .box-footer{
         display: flex;
         flex-direction:column-reverse;
-        input{
-            margin-bottom: 5rem;
-        }
         .box-footer-img { 
+            display: flex;
+            width: 30rem;
+            padding-top: 5rem;
+            justify-content: center;
+            img {
+                display: flex;
+            }
+        }
+    }
+    .box-footer-icon {
         display: flex;
-        width: 30rem;
-        padding-top: 5rem;
-        justify-content: center;
-        img {
-            display: flex;
-        }
-        .box-footer-icon {
-            display: flex;
-            justify-content: space-between;
-            padding: 7rem 0 0 0;
-        }
+        justify-content: space-between;
+        padding: 7rem 0 0 0;
     }
     .box-list {
         display: flex;
@@ -374,6 +369,7 @@ footer {
             height: 4.4rem;
             padding: 1rem;
             width: 20.1rem;
+            margin-bottom: 5rem;
         }
         button {
             background-color: var(--rojo-brillante);
@@ -401,7 +397,6 @@ footer {
     }
 }
 
-/* HOVER */
 
 header button:hover {
     cursor: pointer;
@@ -435,11 +430,6 @@ header nav ul li:hover {
     cursor: pointer;
     background-color:var(--rojo-botonesHover);
 }
-
-
-// mobile 
-
-
 .box-footer .box-footer-icon a img:hover {
     cursor: pointer;
     filter: opacity(0.4) drop-shadow(0 0 0 red);

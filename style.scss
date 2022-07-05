@@ -113,10 +113,6 @@ header {
     font-size: 1.6rem;
     justify-content: space-around;
     column-gap: 10rem;
-    background-image: url(./imagenes/bg-tablet-pattern.svg);
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: right;
     .third-section {
         display: flex;
         flex-direction: column;
@@ -145,38 +141,39 @@ header {
         display: flex;
         flex-direction: column;
         max-width: 55rem;
-        p {
-            line-height: 2;
-            font-size: 1.6rem;
-        }
-        div span {
-            align-items: center;
-            background-color: var(--rojo-brillante);
-            border-radius: 3rem;
-            color: var(--rojo-muy-pálido);
-            display: flex;
-            flex-direction: column;
-            font-weight: 70rem;
-            height: 4.3rem;
-            justify-content: center;
-            width: 6.3rem;
-            padding: 1rem 2.5rem;
-        }
-        p:first-of-type {
-            color: var(--azul-oscuro);
-            display: flex;
-            align-items: center;
-            font-weight: 700;
-            margin: 0 0 1.5rem 0;
-            margin-top: -4rem;
-        }
-        p:nth-child(2) {
-            color: var(--azul-oscuro);
-            padding-left: 10rem;
-        }
-        p:nth-child(3) {
-            color: var(--azul-grisáceo-oscuro);
-            padding-left: 10rem;
+        .articles{
+            p {
+                line-height: 2;
+                font-size: 1.6rem;
+            }
+            h4 {
+                display: flex;
+                align-items: center;
+            }
+            span {
+                background-color: var(--rojo-brillante);
+                border-radius: 3rem;
+                color: var(--rojo-muy-pálido);
+                display: flex;
+                font-weight: 70rem;
+                height: 4.3rem;
+                width: 6.3rem;
+                padding: 1rem 2.5rem;
+                margin: 0 3.5rem 0 0;
+            }
+            p:first-of-type {
+                color: var(--azul-oscuro);
+                font-weight: 70rem;
+                margin: 0 0 2rem 0;
+            }
+            p:nth-child(2) {
+                color: var(--azul-oscuro);
+                padding-left: 10rem;
+            }
+            p:nth-child(3) {
+                color: var(--azul-grisáceo-oscuro);
+                padding-left: 10rem;
+            }
         }
     }
 }
